@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is about ocelots.">
+    <meta name="keywords" content="ocelot, cat">
+    <meta name="author" content="Max">
+    <title>ocelot</title>
+</head>
+<body>
+    <header>
+        <h1><a href="#ocelot_miau">ocelot</a></h1>
+        <p>welcome to ocelot</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fave_form.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2> About This Form</h2>
+            <p>Form Form Form</p>
+        </section>
+
+        <section id="form">
+            <h2>favourite things according to the lecture</h2>
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name (40 banana)" maxlength="40" required>
+
+                <br>
+
+                <label for="number">Your number:</label>
+                <input type="text" id="number" name="number" placeholder="e.g., 2" pattern="\d{1}" required>
+
+                <br>
+
+                <label for="color">Your color:</label>
+                <input type="color" id="color" name="color">
+
+                <br><br>
+
+                <label for="pet">Your favourite pet:</label>
+                <br>
+                <label for="dog">dog:
+                <input type="checkbox" id="dog" name="pets[]" value="dog">
+                <br>
+                <label for="cat">cat:
+                <input type="checkbox" id="cat" name="pets[]" value="cat">
+                <br>
+                <label for="frog">frog:
+                <input type="checkbox" id="frog" name="pets[]" value="frog">
+                </label>
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Your fav game</legend>
+                    <input type="radio" id="game" name="game" value="all games"> 
+                    <label for="game">d2, mr, cs2, st</label>
+
+                    <br>
+
+                    <input type="radio" id="other" name="game" value="others" disabled>
+                    <label for="other">roblox</label>
+                </fieldset>
+
+                <br><br>
+
+                <label for="favsub">Fav Subject
+                    <select id="favsub" name="favsub">
+                        <option value="pick" disabled>Please pick one</option>
+                        <option value="Web Tech">Web Tech</option>
+                        <option value="Intro to prog">Intro to prog</option>
+                    </select>
+                </label>
+
+                <br><br>
+
+                <label for="birthday">birfday
+                <input type="date" id="birthday" name="birthday" required>
+                </label>
+
+                <br><br>
+
+                <label for="dayrating">How&apos;s your day going?:
+                    <input type="range" id="dayrating" name="dayrating" min="1" max="10">
+                </label>
+
+                <br><br>
+
+                <textarea name="comment" id="comment" rows="4" cols="50">placeholder</textarea>
+
+                <br><br>
+
+                <input type="submit" value="submit">
+                <input type="reset" value="clear">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>visit all my <a href="https://ocelot.rip/" target="_blank">link</a> pls</p>
+        <h3>send email to <a href="mailto:max@postpal.com.au">myself</a> for extra information!</h3>
+        <p>&copy; 2030 Max. None of my rights for this website are reserved.</p>
+    </footer>
+
+</body>
+</html>
